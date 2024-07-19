@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: Microsoft Graph Device Management API
+  version: beta
+paths:
+  /deviceManagement/reports/getConfigurationPoliciesReportForDevice:
+    get:
+      summary: Get Configuration Policies Report For Device
+      operationId: getConfigurationPoliciesReportForDevice
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConfigurationPoliciesReport'
+components:
+  schemas:
+    ConfigurationPoliciesReport:
+      type: object
+      properties:
+
+        # Define the properties of the ConfigurationPoliciesReport here
